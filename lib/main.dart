@@ -23,9 +23,18 @@ class BallPage extends StatelessWidget {
   }
 }
 
-class Ball extends StatelessWidget {
+class Ball extends StatefulWidget {
+  @override
+  _BallState createState() => _BallState();
+}
+
+class _BallState extends State<Ball> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+      child: Container(
+        child: Image.asset('images/ball1.png'),
+      ),
+    );
   }
 }
